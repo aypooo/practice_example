@@ -19,7 +19,7 @@ public class Exercise6_04 {
 }
 
 
-class Student{
+class  Student{
 	String name;
 	int ban;
 	int no;
@@ -36,8 +36,8 @@ class Student{
 		
 	}
 	float getAverage(){
-		float avg = (kor+eng+math)/3;
-		return avg;
+		return (int)(getTotal()/3f*10+0.5f) /10f; // 10 곱해서 0.5f 더해서 반올림 후 10f로 나누기
+		
 		
 		
 	}
