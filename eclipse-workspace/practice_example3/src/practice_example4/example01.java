@@ -1,7 +1,7 @@
 package practice_example4;
 
 public class example01 {
-	class TV{
+	static class TV{
 		String name;
 		int year;
 		int inch;
@@ -15,14 +15,13 @@ public class example01 {
 		}
 		
 	String show(){
-		return name+"에서 만든"+year+"년형"+inch+"인치 TV";
+		return name+"에서 만든"+year+"년형 "+inch+"인치 TV";
 		}
 	}
 
 	public static void main(String[] args) {
 		TV myTV = new TV("LG", 2017, 32);
-		myTV.show();
-
+		System.out.println(myTV.show());
 	}
 
 }
